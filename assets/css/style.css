@@ -1,0 +1,43 @@
+* {
+    /*color: white;*/
+}
+body {
+    background: url('/Users/imfoo/Desktop/Site/Training/assets/multimedia/image/starsky.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.intro {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.quote {
+    margin-right: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    justify-content: end;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+.image {
+    justify-content: start;
+    background: url(https://weraveyou.com/wp-content/uploads/2021/03/elon-musk.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -65px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    grid-column: 3;
+    grid-row: 1;
+    margin-top: 20px;
+}
+blockquote {
+    margin: 5px;
+}
+p {
+    margin: 0;
+}
