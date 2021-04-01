@@ -11,9 +11,10 @@ body {
 .head {
     display: flex;
     justify-content: space-around;
-    width: 250px;
-    height: 225px;
-    background-color: black;
+    width: 230px;
+    height: 215px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 10px black solid;
     border-radius: 250px 250px 0 0;
     transition: .25s ease-in-out;
     position: relative;
@@ -29,10 +30,11 @@ body {
     height: 225px;
 }
 .eye{
-    margin: 150px 40px 0;
+    margin: 140px 25px 0;
     width: 25px;
     height: 25px;
     background-color: white;
+    border: 10px black solid;
     border-radius: 50%;
 }
 .body {
@@ -40,20 +42,27 @@ body {
     margin-top: 10px;
     height: 300px;
     border-radius: 0% 0% 20% 20%;
-    width: 250px;
-    background-color: black;
+    width: 230px;
+    background-color: white;
+    border: 10px black solid;
     position: relative;
+    z-index: 1000;
 }
 .arm {
     display: flex;
     height: 200px;
-    width: 60px;
-    background-color: black;
+    width: 40px;
+    margin: 0 -10px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px black solid;
     border-radius: 60px;
 }
 .arm.left{
     position: absolute;
-    left: -70px;
+    left: 50%;
+    top: 50%;
+    margin-left: -195px;
+    margin-top: -120px;
     transform-origin: center 30px;
     transition: all .5s ease-in-out;
 }
@@ -62,7 +71,10 @@ body {
 }
 .arm.right{
     position: absolute;
-    right: -70px;
+    right: 50%;
+    top: 50%;
+    margin-right: -195px;
+    margin-top: -120px;
     transform-origin: center 30px;
     transition: all .5s ease-in-out;
 }
@@ -72,14 +84,17 @@ body {
 .leg {
     display: flex;
     height: 150px;
-    width: 50px;
-    background-color: black;
-    border-radius: 25px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 10px black solid;
+    border-radius: 40px;
 }
 .leg.left {
     position: absolute;
-    left: 50px;
-    bottom: -75px;
+    top: 500px;
+    left: 50%;
+    margin-left: -70px;
+    z-index: 1;
     transition: .25s ease-in-out;
 }
 .leg.left:hover {
@@ -87,9 +102,11 @@ body {
 }
 .leg.right {
     position: absolute;
-    bottom: -75px;
-    right: 50px;
+    top: 500px;
+    right: 50%;
+    margin-right: -70px;
     transition: .25s ease-in-out;
+    z-index: 1;
 }
 .leg.right:hover {
     transform: rotate(-25deg);
